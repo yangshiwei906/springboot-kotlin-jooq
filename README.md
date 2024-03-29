@@ -1,4 +1,5 @@
-Spring-Boot+Kotlin+jooq+PostgreSQL project 
+Spring-Boot+Kotlin+jooq+PostgreSQL project
+
 実行方法
 IDEのSDKはJava17
 
@@ -9,6 +10,8 @@ docker-compose up -d
 JOOQコードの生成
 
 ./gradlew generateJooq
+
+
 アプリケーションの実行
 
 ./gradlew bootRun
