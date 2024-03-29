@@ -28,13 +28,14 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("com.github.guepardoapps:kulid:2.0.0.0")
 	implementation("org.jooq:jooq:3.19.1")
+	jooqGenerator("org.postgresql:postgresql:42.5.1")
 	runtimeOnly("org.postgresql:postgresql")
 	runtimeOnly("org.springframework.boot:spring-boot-devtools")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	implementation("com.github.guepardoapps:kulid:2.0.0.0")
 
-	jooqGenerator("org.postgresql:postgresql:42.5.1")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
 }
 
 tasks.withType<KotlinCompile> {
