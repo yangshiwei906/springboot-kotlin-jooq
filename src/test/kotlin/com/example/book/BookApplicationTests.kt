@@ -144,6 +144,5 @@ class BookApplicationTest {
 	}
 
 	private fun mockRecord(): Record = mock()
-
-//	private fun mockResult() = 1
+	
 }
